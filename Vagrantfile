@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64-docker"
-  config.vm.box_url = "https://oss-binaries.phusionpassenger.com/vagrant/boxes/2014-02-01/ubuntu-12.04.3-amd64-vbox.box"
+  config.vm.box = "trusty64-docker"
+  config.vm.box_url = "https://oss-binaries.phusionpassenger.com/vagrant/boxes/2014-05-11/ubuntu-14.04-amd64-vbox.box"
   config.vm.network :private_network, ip: "2.2.2.2"
   config.ssh.forward_agent = true
   config.vm.provision :shell, :path => "bootstrap.sh"
